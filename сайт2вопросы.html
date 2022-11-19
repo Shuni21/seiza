@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <style>
+        html {
+        height:100%;
+        }
+
+        body {
+        margin:0;
+        }
+        .bg {
+        animation:slide 3s ease-in-out infinite alternate;
+        background-image: linear-gradient(-60deg, rgb(14, 33, 143) 50%, rgb(64, 6, 129) 50%);
+        bottom:0;
+        left:-50%;
+        opacity:.5;
+        position:fixed;
+        right:-50%;
+        top:0;
+        z-index:-1;
+        }
+
+        .bg2 {
+        animation-direction:alternate-reverse;
+        animation-duration:4s;
+        }
+
+        .bg3 {
+        animation-duration:5s;
+        }
+        @keyframes slide {
+        0% {
+            transform:translateX(-25%);
+        }
+        100% {
+            transform:translateX(25%);
+        }
+        }
+        #block1 .body .title{
+            display: flex;
+            justify-content: center;
+            font-size: 85px;
+            color:white;}
+        #panel {
+        position: fixed; /* положение */
+        top: 0px; /* отступ сверху */
+        left: 0; /* отступ слева */
+        background: rgb(131,103,206); /* цвет фона */
+        width: 30px; /* ширина блока */
+        height: 40px; /* высота блока */
+        font: 14px Arial; /* размер и тип шрифта */
+        color: rgb(177, 183, 196); /* цвет текста */
+        text-align: center; /* выравнивание текста по центру */
+        padding: 5px; /* отступы от границ внутри блока */
+
+        -webkit-transition-duration: 0.3s; /* анимационное выдвижение для всех браузеров*/
+        -moz-transition-duration: 0.3s;
+        -o-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+
+        -webkit-border-radius: 0 5px 5px 0; /* закругление границ для всех браузеров*/
+        -moz-border-radius: 0 5px 5px 0;
+        border-radius: 0 5px 5px 0;
+        }
+
+        /* СКРЫТЫЙ БЛОК */
+        #hidden_panel {
+        position: fixed; /* положение */
+        top: 0px; /* отступ сверху */
+        left: -220px; /* отступ слева */
+        background: rgb(9,19,41); /* цвет фона */
+        color: rgb(255, 255, 255); /* цвет текста */
+        width: 200px; /* ширина блока */
+        height: 1920px; /* высота блока */
+        padding: 10px; /* отступы от границ внутри блока */
+        text-align: left; /* выравнивание текста */
+
+        -webkit-transition-duration: 0.3s; /* анимационное выдвижение для всех браузеров*/
+        -moz-transition-duration: 0.3s;
+        -o-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+
+        -webkit-border-radius: 0 5px 5px 0; /* закругление границ для всех браузеров*/
+        -moz-border-radius: 0 5px 5px 0;
+        border-radius: 0 5px 5px 0;
+        }
+        #panel:hover {
+        left: 220px; /* при наведении выдвигается на скрытые 200px + 20px отступы */
+        }
+        #panel:hover #hidden_panel {
+        left: 0; /* отступ слева */
+        }
+        a{
+            font-size: 20px;
+            color: aliceblue;
+            font-family: 'Times New Roman';
+            
+        }
+
+            
+    </style>
+</head>
+<body>
+    <div id="block1">
+        <div class="bg"></div>
+        <div class="bg bg2"></div>
+        <div class="bg bg3"></div>
+     </div>
+        <div style="display:flex;flex-direction: column;">
+        <div style="color:aliceblue;font-size:27px;font-family:fantasy;display:flex;justify-content: center;"> Игра с вопросами </div>
+        <div style="display: flex;justify-content: center;"><iframe src="index.html" width="1050" height="550"></iframe></div>
+	</div>
+        <div id="panel">
+        <span class="material-symbols-outlined">
+            menu
+        </span>
+        <div id="hidden_panel">
+            <h3 style="font-style:oblique;margin-left: 65px;font-family: brush script mt; ">SEIZA</h3>
+            <ul class="nav">
+                <div style="margin-left:-20px;">
+                <li><a href="сайт2главный.html" >Главная</a></li>
+                <li><a href="сайт2карта.html">Звездная карта</a></li>
+                <li><a class="сайт2вопросы.html"href="#home">Игра с вопросами</a></li>
+                <li><a href="сайт2информация.html">Информация</a></li>
+                </div>
+            </ul>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
