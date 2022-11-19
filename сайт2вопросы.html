@@ -12,7 +12,6 @@
         body {
         margin:0;
         }
-
         .bg {
         animation:slide 3s ease-in-out infinite alternate;
         background-image: linear-gradient(-60deg, rgb(14, 33, 143) 50%, rgb(64, 6, 129) 50%);
@@ -32,7 +31,7 @@
 
         .bg3 {
         animation-duration:5s;
-        }   
+        }
         @keyframes slide {
         0% {
             transform:translateX(-25%);
@@ -41,7 +40,6 @@
             transform:translateX(25%);
         }
         }
-        
         #block1 .body .title{
             display: flex;
             justify-content: center;
@@ -111,22 +109,22 @@
         <div class="bg"></div>
         <div class="bg bg2"></div>
         <div class="bg bg3"></div>
-        </div>
-        
-        <div style="color:aliceblue;font-size:27px;font-family:fantasy;display:flex;justify-content: center;"> Звездная карта </div>
-        <img src="img/map of nightsky.jpg" style="display: flex;justify-content: center;width: 100%;">
-        
+     </div>
+        <div style="display:flex;flex-direction: column;">
+        <div style="color:aliceblue;font-size:27px;font-family:fantasy;display:flex;justify-content: center;"> Игра с вопросами </div>
+        <div style="display: flex;justify-content: center;"><iframe src="quiz.html" width="1050" height="550"></iframe></div>
+	</div>
         <div id="panel">
         <span class="material-symbols-outlined">
             menu
         </span>
         <div id="hidden_panel">
-            <h3 style="font-style:oblique;margin-left: 65px;font-family: brush script mt; ">SEIZA</h3>         
+            <h3 style="font-style:oblique;margin-left: 65px;font-family: brush script mt; ">SEIZA</h3>
             <ul class="nav">
                 <div style="margin-left:-20px;">
                 <li><a href="index.html" >Главная</a></li>
-                <li><a class="сайт2карта.html"href="#home">Звездная карта</a></li>
-                <li><a href="сайт2вопросы.html">Игра с вопросами</a></li>
+                <li><a href="сайт2карта.html">Звездная карта</a></li>
+                <li><a class="сайт2вопросы.html"href="#home">Игра с вопросами</a></li>
                 <li><a href="сайт2информация.html">Информация</a></li>
                 </div>
             </ul>
