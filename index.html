@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name="yandex-verification" content="cb9cf5e0a9b702bb" charset="UTF-8">
+    <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="s.css">
     <style>
         
 
@@ -112,6 +113,16 @@
             font-family: 'Times New Roman'; 
         }
 
+        .footer{
+            position: fixed; /* Фиксированное положение */
+            left: 0; bottom: 0; /* Левый нижний угол */
+            padding: 10px; /* Поля вокруг текста */
+            background: #000000; /* Цвет фона */
+            color: #fff; /* Цвет текста */
+            width: 100%; /* Ширина слоя */
+            
+        } 
+
             
     </style>
 </head>
@@ -130,28 +141,8 @@
         <div class="bg bg3"></div>
     </div>    
         <div style="display: flex;justify-content: center;"> 
-        <div id="block2" style="display:flex;justify-content: center;">
-            <div style="font-size:24px;">
-<p>Созвездием нарекают сумму звезд, выстроенных в обусловленную форму. 
-Давным-давно под данным термином предполагались разводы для небе, отдаленно подсказывающие фантастические создания либо обусловленные предметы. 
-Собственно после данному принципу некоторые из них получили свои названия, используемые астрологами по сей день. 
-Первые созвездия были составлены греческим литератором Аратом, описавшим их в 270 году до н.э. 
-Внушительный вклад в составление созвездий привнес Клавдий Птолемей. 
-Он потратил очень времени на изучение неба и поиск групп звезд, какие создаются в узоры. 
-Примерно в 150 году н. он открыл и описал 48 созвездий, какие до сих пор употребляются астрологами для ориентации в небе. 
-Большинство из них наименована в честь мифических греческих созданий и животных. В период с XVI по XVIII века, с возникновением первых телескопов, 
-интерес к космосу активизировал возрастать. Множество астрологов изучали небо и пытались обнаружить свежеиспеченные созвездия. 
-В тот момент к открытиям Птолемея добавились скопления, означающие знаки Зодиака, а да звездные группы из пояса Ориона.
-</p>
-<p>Определение с созвездиями совпадает, но есть некоторые отличия. 
-Астеризмами называют группы звезд, входящие в состав определенного созвездия и образующие легко узнаваемую форму, которую легко заметить 
-на ночном небе даже невооруженным взглядом. Астеризмы не имеют официального списка, поскольку составлены астрономами любителями.
-</p> 
-<br>
-
-        </div>
     </div>
-    </div>        
+    <div class="footer">© Шуни 2022-2023</div>        
     <div id="panel">
         <span class="material-symbols-outlined">
             menu
@@ -161,14 +152,28 @@
             <h3 style="font-style:oblique;margin-left: 65px;font-family: brush script mt; ">SEIZA</h3>
             <ul class="nav">
                 <div style="margin-left:-20px;">
-                <li><a class="index.html" href="#home">Главная</a></li>
-                <li><a href="сайт2карта.html">Звездная карта</a></li>
-                <li><a href="сайт2вопросы.html">Игра с вопросами</a></li>
-                <li><a href="сайт2информация.html">Информация</a></li>
+                    <button onclick="document.location='index.html'" class="button" style="margin-bottom: 10px;">
+                        Главная
+                    </button>
+
+                    <button onclick="document.location='сайт2карта.html'" class="button" style="margin-bottom: 10px;">
+                        Звездная карта
+                    </button>
+
+                    <button onclick="document.location='сайт2вопросы.html'" class="button" style="margin-bottom: 10px;">
+                        Игра с вопросами
+                    </button>
+
+                    <button onclick="document.location='сайт2информация.html'" class="button" style="margin-bottom: 10px;">
+                        Информация
+                    </button>
                 </div>
             </ul>
         </div>
     </div>
     </div>
+
+
+    
 </body>
 </html>
