@@ -1,0 +1,12 @@
+video{
+    width: 100%;
+    clip-path: url(#text-overlay);
+}
+svg{
+    font-family: Impact, fantasy;
+    font-size: 8em;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+

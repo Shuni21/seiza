@@ -1,0 +1,71 @@
+.card {
+    width: 420px;
+    height: 150px;
+    padding: 0.5rem;
+    background: rgba(198, 198, 198, 0.34);
+    border-radius: 8px;
+    backdrop-filter: blur(5px);
+    position: absolute;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.440);
+    border-left: 2px  rgba(255, 255, 255, 0.545) outset;
+    box-shadow: -40px 50px 30px rgba(0, 0, 0, 0.280);
+    transform: skewX(10deg);
+    transition: .4s;
+    overflow: hidden;
+    color: white;
+    
+  }
+  
+  .card:hover {
+    height: 250px;
+    transform: skew(0deg);
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  
+  
+  
+  
+  
+  .card h1 {
+    text-align: center;
+    margin: 1.3rem;
+    color: rgb(218, 244, 237);
+    text-shadow: -10px 5px 10px rgba(0, 0, 0, 0.573);
+  }
+  .card h2{
+    text-align: center;
+  }
+  
+  
+
+
+  /* inspired form gumroad website */
+.button {
+    --bg: #000;
+    --hover-bg: #ff90e8;
+    --hover-text: #000;
+    color: #fff;
+    border: 1px solid var(--bg);
+    border-radius: 4px;
+    padding: 0.8em 2em;
+    background: var(--bg);
+    transition: 0.2s;
+    width: 150px;
+  }
+  
+  .button:hover {
+    color: var(--hover-text);
+    transform: translate(-0.25rem,-0.25rem);
+    background: var(--hover-bg);
+    box-shadow: 0.25rem 0.25rem var(--bg);
+    width: 150px;
+  }
+  
+  .button:active {
+    transform: translate(0);
+    box-shadow: none;
+    width: 150px;
+  }
+
+  
