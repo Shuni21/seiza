@@ -2,14 +2,17 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Главная</title>
+    <title>Title</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link rel="stylesheet" href="s.css">
     <style>
         
 
         body {
-        margin:0;
+            display: flex;
+            flex-direction: column;
+            margin:0;
+
+
         }
         p { text-indent: 25px; }
         
@@ -114,16 +117,15 @@
         }
 
         .footer{
-            position: fixed; /* Фиксированное положение */
-            left: 0; bottom: 0; /* Левый нижний угол */
-            padding: 10px; /* Поля вокруг текста */
-            background: #000000; /* Цвет фона */
-            color: #fff; /* Цвет текста */
-            width: 100%; /* Ширина слоя */
+            background-color: black;
+            color: whitesmoke;
+            font-size: 20px;
+            height: 50 px;
+            width: 100%;
+            display: flex;
+            align-items: flex-end;
             
-        } 
-
-            
+        }   
     </style>
 </head>
 <body>
@@ -134,46 +136,34 @@
         <div style="display:flex;justify-content: center;">
         <div style="color:aliceblue;font-size:27px;font-family:fantasy;">Добро пожаловать на сайт 
             <span style="font-family: brush script mt;font-size: 40px;">Seiza</span>, 
-            посвященный созвездиям. <br> Здесь вы сможете рассмотреть звездную карту и проверить ваши знания</div>
+            посвященный созвездиям. <br> Здесь вы сможете рассмотреть звездную карту и 
+            проверить ваши знания</div>
+            <div class="footer">© Шуни 2022</div>
         </div>
         <div class="bg"></div>
         <div class="bg bg2"></div>
         <div class="bg bg3"></div>
+         
     </div>    
-        <div style="display: flex;justify-content: center;"> 
-    </div>
-    <div class="footer">© Шуни 2022-2023</div>        
+          
     <div id="panel">
         <span class="material-symbols-outlined">
             menu
         </span>
         
         <div id="hidden_panel">
+            
             <h3 style="font-style:oblique;margin-left: 65px;font-family: brush script mt; ">SEIZA</h3>
             <ul class="nav">
                 <div style="margin-left:-20px;">
-                    <button onclick="document.location='index.html'" class="button" style="margin-bottom: 10px;">
-                        Главная
-                    </button>
-
-                    <button onclick="document.location='сайт2карта.html'" class="button" style="margin-bottom: 10px;">
-                        Звездная карта
-                    </button>
-
-                    <button onclick="document.location='сайт2вопросы.html'" class="button" style="margin-bottom: 10px;">
-                        Игра с вопросами
-                    </button>
-
-                    <button onclick="document.location='сайт2информация.html'" class="button" style="margin-bottom: 10px;">
-                        Информация
-                    </button>
+                <li><a class="index.html" href="#home">Главная</a></li>
+                <li><a href="сайт2карта.html">Звездная карта</a></li>
+                <li><a href="сайт2вопросы.html">Игра с вопросами</a></li>
+                <li><a href="сайт2информация.html">Информация</a></li>
                 </div>
             </ul>
         </div>
     </div>
-    </div>
-
-
     
 </body>
 </html>

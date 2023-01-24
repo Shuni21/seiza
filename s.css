@@ -1,5 +1,5 @@
 .card {
-    width: 400px;
+    width: 420px;
     height: 150px;
     padding: 0.5rem;
     background: rgba(198, 198, 198, 0.34);
@@ -32,6 +32,9 @@
     margin: 1.3rem;
     color: rgb(218, 244, 237);
     text-shadow: -10px 5px 10px rgba(0, 0, 0, 0.573);
+  }
+  .card h2{
+    text-align: center;
   }
   
   
