@@ -124,13 +124,21 @@
         <div class="bg bg2"></div>
         <div class="bg bg3"></div>
         </div>
+        <div style="display: flex;flex-direction: column;">
         
-        <div style="color:aliceblue;font-size:27px;font-family:fantasy;display:flex;justify-content: center;"> Звездная карта </div>
+         <div style="color:aliceblue;font-size:27px;font-family:fantasy;display:flex;justify-content: center;"> Звездная карта </div>
+        
         
         <span class='zoom' id='ex3'>
-            <img src='img/map of nightsky.jpg' width='1920' height='1080' alt='Daisy on the Ohoopee'/>
-            <p>Click to activate</p>
-        </span>
+        <picture class="wrapper">
+        <source media = "(max-width:800px)" srcset="img/map of nightsky.jpg">
+        <img src='img/map of nightsky.jpg'  alt='Daisy on the Ohoopee'/>
+        <p style="color: white;">нажмите, чтобы увеличить</p>
+        </picture>
+        </span>   
+        </div>
+        
+        
         
         <div id="panel">
         <span class="material-symbols-outlined">
