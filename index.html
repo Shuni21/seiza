@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Главная</title>
+    <link rel="icon" href="/img/favicon_io/android-chrome-192x192.png" type="image/x-icon" >
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="s.css">
     <style>
@@ -17,46 +18,28 @@
             width: 100%;
             height: 270px; 
         }
-        #block1 .bg {
-        animation:slide 3s ease-in-out infinite alternate;
-        background-image: linear-gradient(-60deg, rgb(14, 33, 143) 50%, rgb(64, 6, 129) 50%);
-        bottom:0;
-        left:-50%;
-        opacity:.5;
-        position:fixed;
-        right:-50%;
-        top:0;
-        z-index:-1;
-        }
+        html, body {
+  width: 100%;
+  height:100%;
+}
 
-        #block1 .bg2 {
-        animation-direction:alternate-reverse;
-        animation-duration:4s;
-        }
+body {
+    background: linear-gradient(-60deg, #010350,#1d035f,#370075,#01094d);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
 
-        #block1 .bg3 {
-        animation-duration:5s;
-        }
-        @keyframes slide {
-        0% {
-            transform:translateX(-25%);
-        }
-        100% {
-            transform:translateX(25%);
-        }
-        }
-        
-        #block1 .body .title{
-            display: flex;
-            justify-content: center;
-            font-size: 85px;
-            color:white;}
-        #block2{
-            background-color: rgb(241, 240, 240);
-            width: 80%;
-            box-shadow: 0 0 0 3px rgb(47, 0, 255), 
-                        0 0 0 6px rgb(183, 0, 255)         
-        }
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
        
         #panel {
         position: fixed; /* положение */
@@ -123,10 +106,12 @@
             
         } 
 
-            
-    </style>
+        </style>
+        
 </head>
+
 <body>
+    
     <div id="block1">
         <div style="font-size:40px;">
         <h1 class="title" style="display:flex;justify-content: center;font-family:brush script mt ;color:aliceblue;">Seiza</h1>

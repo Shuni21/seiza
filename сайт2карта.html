@@ -15,34 +15,28 @@
         margin:0;
         }
 
-        .bg {
-        animation:slide 3s ease-in-out infinite alternate;
-        background-image: linear-gradient(-60deg, rgb(14, 33, 143) 50%, rgb(64, 6, 129) 50%);
-        bottom:0;
-        left:-50%;
-        opacity:.5;
-        position:fixed;
-        right:-50%;
-        top:0;
-        z-index:-1;
-        }
+        html, body {
+  width: 100%;
+  height:100%;
+}
 
-        .bg2 {
-        animation-direction:alternate-reverse;
-        animation-duration:4s;
-        }
+body {
+    background: linear-gradient(-45deg, #010350,#1d035f,#370075,#030c66);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
 
-        .bg3 {
-        animation-duration:5s;
-        }   
-        @keyframes slide {
-        0% {
-            transform:translateX(-25%);
-        }
-        100% {
-            transform:translateX(25%);
-        }
-        }
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
         
         #block1 .body .title{
             display: flex;
@@ -120,9 +114,7 @@
 </head>
 <body>
     <div id="block1">
-        <div class="bg"></div>
-        <div class="bg bg2"></div>
-        <div class="bg bg3"></div>
+        
         </div>
         <div style="display: flex;flex-direction: column;">
         
