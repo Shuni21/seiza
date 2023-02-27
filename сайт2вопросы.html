@@ -3,38 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <title>Игра с вопросами</title>
+    <link rel="icon" href="/img/favicon_io/favicon.ico" type="image/x-icon" >
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="s.css">
     <style>
-        html {
-        height:100%;
-        }
+        html { overflow:  hidden; }
 
         body {
         margin:0;
         }
-        html, body {
-  width: 100%;
-  height:100%;
+        
+
+.space {
+  position: relative;
+  display: block;
+  height: 100vh;
+  width: 110%;
+  background-color: #1B2735;
+  background: radial-gradient(ellipse at bottom, #1f1b35 0%, #060811 100%);
+  color: white;
+  padding-top: 20vh;
 }
 
-body {
-    background: linear-gradient(-45deg, #010350,#1d035f,#370075,#030c66);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
+#parent {
+  position: relative;
 }
 
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+.form {
+  color: white;
+  
+  left: 0;
+  top: 40%;
 }
+
+.stars>div {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.stars .stars-back {
+  top: -50%;
+  opacity: 0.5;
+  background-image: radial-gradient(2px 2px at 20px 30px, #eee, rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 40px 70px, #fff, rgba(0, 0, 0, 0)), radial-gradient(1px 1px at 90px 40px, #fff, rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 160px 120px, #ddd, rgba(0, 0, 0, 0));
+  background-repeat: repeat;
+  background-size: 300px 300px;
+  animation: stars 4s infinite linear;
+}
+
+.stars .stars-middle {
+  background-image: radial-gradient(3px 3px at 50px 160px, #ddd, rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 90px 40px, #fff, rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 130px 80px, #fff, rgba(0, 0, 0, 0));
+  background-repeat: repeat;
+  background-size: 200px 200px;
+  animation: stars 2.5s infinite linear;
+}
+
+@keyframes stars {
+  0% {
+    top: -100%;
+  }
+  100% {
+    top: 0;
+  }
+}
+#block1 .body .title{
+            display: flex;
+            justify-content: center;
+            font-size: 85px;
+            color:white;}
         #panel {
         position: fixed; /* положение */
         top: 0px; /* отступ сверху */
@@ -96,12 +135,25 @@ body {
 </head>
 <body>
     <div id="block1">
-        
-     </div>
-        <div style="display:flex;flex-direction: column;">
-        <div style="color:aliceblue;font-size:27px;font-family:fantasy;display:flex;justify-content: center;"> Игра с вопросами </div>
-        <div style="display: flex;justify-content: center;"><iframe src="quiz.html" width="1050" height="550"></iframe></div>
-	</div>
+    <div id="parent">
+        <div class="jumbotron space">
+          <div class="stars">
+            <div class="stars-back"></div>
+            <div class="stars-middle"></div>
+            <div class="stars-front"></div>
+          </div> 
+            <div style="position: static;top: 0px;">
+                <div  style="color:aliceblue;font-size:27px;font-family:fantasy;display:flex;justify-content: center;"> Игра с вопросами </div>
+                <div style="display:flex;justify-content: center;">
+                    <div style="display: flex;justify-content: center;position: absolute;"><iframe src="quiz.html" width="1050" height="550"></iframe></div>
+                </div>
+            </div>
+            
+            
+            
+
+        </div>
+    
         <div id="panel">
         <span class="material-symbols-outlined">
             menu
@@ -129,6 +181,7 @@ body {
             </ul>
             
         </div>
+    </div>
     </div>
     </div>
 </body>
