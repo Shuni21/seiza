@@ -8,39 +8,66 @@
     <link rel="stylesheet" href="s.css">
     <style>
         
-
-        body {
-        margin:0;
-        }
-        p { text-indent: 25px; }
-        
-        #block1{
-            width: 100%;
-            height: 270px; 
-        }
-        html, body {
-  width: 100%;
-  height:100%;
-}
-
+html { overflow:  hidden; }
 body {
-    background: linear-gradient(-60deg, #010350,#1d035f,#370075,#01094d);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
-}
-
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+margin:0;
 }
        
+.space {
+  position: relative;
+  display: block;
+  height: 100vh;
+  width: 100%;
+  background-color: #1B2735;
+  background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+  color: white;
+  padding-top: 20vh;
+}
+
+#parent {
+  position: relative;
+}
+
+.form {
+  color: white;
+  position: absolute;
+  left: 0;
+  top: 40%;
+}
+
+.stars>div {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.stars .stars-back {
+  top: -50%;
+  opacity: 0.5;
+  background-image: radial-gradient(2px 2px at 20px 30px, #eee, rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 40px 70px, #fff, rgba(0, 0, 0, 0)), radial-gradient(1px 1px at 90px 40px, #fff, rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 160px 120px, #ddd, rgba(0, 0, 0, 0));
+  background-repeat: repeat;
+  background-size: 300px 300px;
+  animation: stars 4s infinite linear;
+}
+
+.stars .stars-middle {
+  background-image: radial-gradient(3px 3px at 50px 160px, #ddd, rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 90px 40px, #fff, rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 130px 80px, #fff, rgba(0, 0, 0, 0));
+  background-repeat: repeat;
+  background-size: 200px 200px;
+  animation: stars 2.5s infinite linear;
+}
+
+@keyframes stars {
+  0% {
+    top: -100%;
+  }
+  100% {
+    top: 0;
+  }
+}
         #panel {
         position: fixed; /* положение */
         top: 0px; /* отступ сверху */
@@ -113,21 +140,22 @@ body {
 <body>
     
     <div id="block1">
-        <div style="font-size:40px;">
-        <h1 class="title" style="display:flex;justify-content: center;font-family:brush script mt ;color:aliceblue;">Seiza</h1>
+      <div class="parent">
+        <div class="jumbotron space">
+          <div class="stars">
+            <div class="stars-back"></div>
+            <div class="stars-middle"></div>
+            <div class="stars-front"></div>
+          </div>
+          <h1 class="title" style="display:flex;justify-content: center;font-family:brush script mt ;color:aliceblue;font-size:70px;">Seiza</h1>
+          <div style="display:flex;justify-content: center;">
+            <p class="lead" style="color:aliceblue;font-size:27px;font-family:fantasy;">Сайт посвященный созвездиям. Здесь вы сможете рассмотреть звездную карту и проверить ваши знания</p>
+          </div>
         </div>
-        <div style="display:flex;justify-content: center;">
-        <div style="color:aliceblue;font-size:27px;font-family:fantasy;">Добро пожаловать на сайт 
-            <span style="font-family: brush script mt;font-size: 40px;">Seiza</span>, 
-            посвященный созвездиям. <br> Здесь вы сможете рассмотреть звездную карту и проверить ваши знания</div>
-        </div>
-        <div class="bg"></div>
-        <div class="bg bg2"></div>
-        <div class="bg bg3"></div>
-    </div>    
-        <div style="display: flex;justify-content: center;"> 
-    </div>
-    <div class="footer">© Шуни 2022-2023</div>        
+    </div>   
+
+    <div class="footer">© Шуни 2022-2023</div> 
+    
     <div id="panel">
         <span class="material-symbols-outlined">
             menu
@@ -157,6 +185,7 @@ body {
         </div>
     </div>
     </div>
+    
 
 
     
