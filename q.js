@@ -12,15 +12,15 @@ const scoreDiv = document.getElementById("scoreContainer");
 
 // create our questions
 let questions = [
-    {
-        question : "Что такое созвездие?",
-        imgSrc : "img/1в.jpg",
-        choiceA : "A)Группа звёзд на небе",
-        choiceB : "B)Участок неба",
-        choiceC : "C)Временное образование звёзд",
-        correct : "A"
+  {
+    question : "В каком созвездии находится звезда Полярная?",
+    imgSrc : "img/1в.jpg",
+    choiceA : "A)Созвездие Кассиопеи",
+    choiceB : "B)Созвездие Северного Креста",
+    choiceC : "C)Созвездие Большой Медведицы",
+    correct : "C"
 
-    },{
+},{
         question : "Всегда ли присутствуют звёзды на небе?",
         imgSrc : "img/2в.jpg",
         choiceA : "A)Нет, только ночью",
